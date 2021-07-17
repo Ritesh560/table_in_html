@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample form</title>
+    <link rel="stylesheet" href="..\style.css">
+</head>
+<div class="container">
+<body>
+    <form action="">
+       <center> <h1> <strong> Payment Form</strong></h1></center>
+        <fieldset>
+            <legend> <b> Personal Information</b></legend>
+            <br>
+      <p >  Name:<input type="text" name="name" placeholder="name"> <br> <br>
+        Email: <input type="email"  name="email" id="email" placeholder="abc@gmail.com" > <br> <br>
+        password: <input type = "password" placeholder="abc1234"> <br> 
+
+        <h3>Gender</h3>
+        male <input type="radio" name="gender">
+        female <input type="radio" name="gender"> <br> <br> 
+        Address: <textarea name="address" id="address" cols="100" rows="5"></textarea>
+    </fieldset>  </p>
+    <p>
+        <h3>things you like</h3>
+        <label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select> <br>
+
+<label for="bikes">choose a bike:</label>
+<input list="bikes">
+<datalist id="bikes">
+<select name="bikes" id="bikes">
+<option value="royal enfield">royal enfield</option>
+<option value="yamaha">yamaha</option>
+<option value="hero">hero</option>
+        </select></datalist>
+    </p>
+    <p>card type:
+        <select name="card_type" id="card_type">
+        <option value="">---select a card type---</option>
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="rupay">rupay</option>
+        </select> <br> <br>
+        card number: <input type="number" name="card_no." id="card_no."> <br> <br>
+        expiration date: <input type="date" name="exp_date" id="exp_date"> <br> <br>
+        amount to be paid: <input type="text" name="'amt_to_paid" id="amt_to_paid">
+    </p><br>
+    <p>
+        <input type="file" accept=".pdf" name="carddetail" id="carddetail">
+    </p>
+        <p>
+                <button>PAY</button> <br> <br>
+            </div>
+            <p>
+                <h3>ISYOU LIKE MY WORK?</h3>
+            <input type="checkbox" id="like"> like
+            <input type="checkbox" id="improve">need to improve
+            <input type="checkbox" id="dislike">dislike
+            </p>
+      </form>
